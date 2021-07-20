@@ -57,7 +57,9 @@ nav {
 
 section{
     margin-block: 40px;
-    padding-inline: 25px;
+    margin-inline: 25px;
+    padding-left: 10px;
+    
 }
 
 .about {
@@ -134,9 +136,9 @@ h3{
   color: rgb(59, 59, 207);
 }
 
-#contact{
+/* #contact{
   width: 100vw;
-}
+} */
 
 .top{
   position: fixed;
