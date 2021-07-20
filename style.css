@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #555;
+}
+
+.menu{
+    position: absolute;
+    color: #ccc;
+    font-size: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  font-size: 25px;
+  list-style-type: none;
+  font-family: poppins;
+  color: #ccc;
+}
+
+.nav-menu li {
+  padding-inline: 20px;
+}
+
+.nav-menu li:hover a {
+  color: #fff;
+}
+
+.website-name {
+  font-family: roboto;
+  font-size: 36px;
+  color: rgb(109, 221, 118);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* about*/
+
+section{
+    margin-block: 40px;
+    padding-inline: 25px;
+}
+
+.about {
+  display: flex;
+  margin-top: 30px;
+}
+
+.pc {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profilepic {
+  min-width: 150px;
+  max-width: 300px;
+}
+
+.about-text {
+  flex-basis: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-inline: 40px;
+  text-align: justify;
+}
+
+/* measures */
+
+h1 {
+  font-family: roboto;
+  font-size: 38px;
+  text-align: center;
+  color: rgb(26, 121, 158);
+  margin-bottom: 30px;
+}
+
+h2{
+    font-family: roboto;
+    color:darkslateblue;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+
+
+.desc{
+    display: flex;
+}
+
+h3{
+    font-weight: 400;
+    text-align: justify;
+    margin-block: 20px;
+    font-size: 22px;
+}
+
+.desc img{
+    min-width: 150px;
+    max-width: 220px;
+}
+
+.measures li{
+    margin-block: 50px;
+}
+
+.card-link h5{
+  color: rgb(21, 124, 31);
+}
+
+.card-link h5:hover{
+  color: rgb(59, 59, 207);
+}
+
+#contact{
+  width: 100vw;
+}
+
+.top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #555;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 100vw;
+}
+
+.top a{
+  color: rgb(109, 221, 118);
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+  }
+
+  .about {
+    /* flex-direction:column; */
+    flex-wrap: wrap;
+  }
+
+  .about-text {
+    margin-top: 25px;
+  }
+
+  .desc{
+      flex-direction: column;
+  }
+
+}
